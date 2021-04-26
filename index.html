@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crystal | Game</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body>
+
+    <div class="container-fluid col-8">
+        <div class="text-center col-12 game-name">
+            <h1>Crystal Game</h1>
+        </div>
+        <div class="card col-12" style="margin-top: 10px;">
+            <div class="card-header text-center bg-primary card-text">Instroduction</div>
+            <div class="card-body">You will be given a random number at the start of the game. There are four crystals below. By clicking on a crystal you will add a specific amount of points to your total score. You win the game by matching your total score to random number,
+                you lose the game if your total score goes above the random number. The value of each crystal is hidden from you until you click on it. Each time when the game starts, the game will change the values of each crystal</div>
+        </div>
+        <div class="row col-12 keeper-container">
+            <div class="card col-12 col-sm-12 col-md-6 col-lg-3 text-center inner-container">
+                <div class="card-header bg-primary card-text">Target Score</div>
+                <div id="target-score" class="card-body score">0</div>
+            </div>
+            <div class="card col-12 col-sm-12 col-md-6 col-lg-3 text-center inner-container">
+                <div class="card-header bg-primary card-text">Your Score</div>
+                <div id="your-score" class="card-body score">0</div>
+            </div>
+            <div class="card col-12 col-sm-12 col-md-12 col-lg-6 text-center inner-container">
+                <div class="card-header bg-primary card-text">Crystal Selection</div>
+                <div class="card-body images">
+                    <img id="blue" class="col-3" src="./assets/img/blue.png">
+                    <img id="green" class="col-3" src="./assets/img/green.png">
+                    <img id="red" class="col-3" src="./assets/img/red.png">
+                    <img id="yellow" class="col-3" src="./assets/img/yellow.png">
+                </div>
+            </div>
+        </div>
+        <div class="row col-12 keeper-container">
+            <div class="card col-12 col-md-6 text-center inner-container">
+                <div class="card-header bg-primary card-text">Win Count</div>
+                <div id="win_count" class="card-body score">0</div>
+            </div>
+            <div class="card col-12 col-md-6 text-center inner-container">
+                <div class="card-header bg-primary card-text">Lose Count</div>
+                <div id="lose_count" class="card-body score">0</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <!-- JavaScript -->
+    <script src="./assets/js/script.js"></script>
+</body>
+
+</html>

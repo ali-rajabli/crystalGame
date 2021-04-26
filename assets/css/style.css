@@ -1,0 +1,39 @@
+.game-name {
+    background-color: purple;
+    padding: 50px;
+}
+
+.game-name>h1 {
+    color: #fff;
+    font-size: 60px;
+}
+
+.images img {
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    transition-duration: 1s;
+}
+
+.images img:hover {
+    /*  */
+}
+
+.keeper-container {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+
+.inner-container {
+    margin-top: 10px;
+    padding: 0;
+}
+
+.card-text {
+    color: #fff;
+}
+
+.score {
+    font-size: 30px;
+}
